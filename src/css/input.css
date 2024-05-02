@@ -5,3 +5,24 @@
 body {
     font-family: 'Jost', sans-serif;
 }
+
+.navbar-fixed {
+    @apply fixed z-50 bg-white bg-opacity-80 shadow-md;
+    backdrop-filter: blur(3px);
+}
+
+.sidebar-active {
+    @apply scale-x-100
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply w-[30px] -rotate-45;
+}
